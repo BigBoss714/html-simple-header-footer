@@ -1,0 +1,142 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/styles/header-styles.css" />
+
+  <!-- Title -->
+  <title>Header</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+      <div class="header-field">
+        <div class="logo-field">
+          <img src="./assets/images/logo.svg" style="width: 100%; height: 100%;" alt="logo">
+        </div>
+        <div class="rest-field">
+          <div class="navbar-field navbar-font">
+            <div class="navbar-button">catalog</div>
+            <div class="navbar-button">sale</div>
+            <div class="navbar-button">news</div>
+            <div class="navbar-button">articles</div>
+            <div class="navbar-button">about us</div>
+            <div class="navbar-button">contacts</div>
+            <div class="navbar-button">FAQ</div>
+          </div>
+          <div class="other-field navbar-font">
+            <div class="avatar-field">
+              <div class="avatar-icon-field">
+                <img src="./assets/images/avatar.svg" style="width: 100%; height: 100%;" alt="avatar">
+              </div>
+            </div>
+            <div class="order-field">
+              <div>3</div>
+              <div class="bucket-field">
+                <img src="./assets/images/bucket.svg" style="width: 100%; height: 100%;" alt="bucket">
+              </div>
+              <div>$129</div>
+            </div>
+            <div class="badge-field">
+              <img src="./assets/images/badge.svg" alt="badge">
+            </div>
+            <div class="search-input-group">
+              <input type="text" class="input-field">
+              <div class="search-icon">
+                <img src="./assets/images/search-icon.svg" alt="search-icon">
+              </div>
+            </div>
+            <div class="mobile-menu-button" type="button" onclick="openNav()">
+              <img src="./assets/images/mobile-menu-button.svg" style="width: 100%; height: 100%;" alt="avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-navbar-field navbar-font">
+            <div class="navbar-button">catalog</div>
+            <div class="navbar-button">sale</div>
+            <div class="navbar-button">news</div>
+            <div class="navbar-button">articles</div>
+            <div class="navbar-button">about us</div>
+            <div class="navbar-button">contacts</div>
+            <div class="navbar-button">FAQ</div>
+          </div>
+    </div>
+    <!-- Hamburger Menu -->
+    <div class="position-fixed mobile-side-navbar"  id="sideNavbar">
+      <div class="mobile-side-navbar-field">
+        <div class="mobile-first-section">
+          <div class="mobile-menu-logo-field">
+            <img src="./assets/images/mobile-menu-logo.svg" style="width: 100%; height: 100%;" alt="mobile-logo">
+          </div>
+          <div class="mobile-menu-avatar-field">
+            <div class="mobile-menu-avatar-icon-field">
+              <img src="./assets/images/avatar.svg" style="width: 100%; height: 100%;" alt="mobile-avatar">
+            </div>
+          </div>
+          <div class="mobile-order-field">
+            <div>3</div>
+            <div class="mobile-bucket-field">
+              <img src="./assets/images/bucket.svg" style="width: 100%; height: 100%;" alt="mobile-bucket">
+            </div>
+            <div>$129</div>
+          </div>
+          <div class="close-button-field" onclick="closeNav()">
+            <img src="./assets/images/close-icon.svg" style="width: 100%; height: 100%;" alt="close-button">
+          </div>
+        </div>
+        <div class="mobile-second-section">
+          <div class="mobile-search-field">
+            <div class="mobile-search-input-group">
+              <input type="text" class="mobile-search-input-field" />
+              <div class="mobile-search-icon-field">
+                <img src="./assets/images/mobile-search-icon.svg" style="width: 100%; height: 100%;" alt="mobile-search-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-third-section">
+          <div class="mobile-navbar-item">catalog</div>
+          <div class="mobile-navbar-item">sale</div>
+          <div class="mobile-navbar-item">news</div>
+          <div class="mobile-navbar-item">articles</div>
+          <div class="mobile-navbar-item">about us</div>
+          <div class="mobile-navbar-item">contacts</div>
+          <div class="mobile-navbar-item">FAQ</div>
+        </div>
+        <div class="mobile-forth-section">
+          <div class="mobile-badge-field">
+            <img src="./assets/images/mobile-badge.svg" style="width: 100%; height: 100%;" alt="mobile-badge">
+          </div>
+        </div>
+        <div class="mobile-contact-section">
+          <input type="text" class="contact-info-input" placeholder="Name" />
+          <input type="text" class="contact-info-input" placeholder="Email" />
+          <textarea type="text" class="message-input" placeholder="Message"></textarea>
+          <div class="checkbox-field">
+            <input id="contact-checkbox" type="checkbox" class="contact-checkbox">
+            <label for="contact-checkbox" class="contact-checkbox-label">
+              Ознакомлен с политикой конфиденциальности и правилами обработки персональных данных
+            </label>
+          </div>
+          <button class="submit-button">send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <script>
+    function openNav() {
+      document.getElementById("sideNavbar").style.right = "0px"
+    }
+
+    function closeNav() {
+      document.getElementById("sideNavbar").style.right = "-500px"
+    }
+  </script>
+</body>
